@@ -16,7 +16,7 @@ classifier = pickle.load(pickle_in)
 
 st.sidebar.header('Diabetes Prediction')
 select = st.sidebar.selectbox('Select Form', ['Form 1'], key='2')
-if not st.sidebar.checkbox("Hide", True, key='1'):
+if not st.sidebar.checkbox("Hide", False, key='1'):
     st.title('Diabetes Prediction(Only for females above 21years of Age)')
     name = st.text_input("Name:")
     pregnancy = st.number_input("No. of times pregnant:", step = 1)
