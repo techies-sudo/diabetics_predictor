@@ -26,7 +26,7 @@ if not st.sidebar.checkbox("Hide", True, key='1'):
     insulin = st.number_input("2-Hour serum insulin (mu U/ml):")
     bmi = st.number_input("Body mass index (weight in kg/(height in m)^2):")
     dpf = st.number_input("Diabetes Pedigree Function:")
-    age = st.number_input("Age:")
+    age = st.number_input("Age:", step = 1)
 
     submit = st.button('Predict')
 
